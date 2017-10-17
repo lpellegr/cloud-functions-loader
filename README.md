@@ -23,6 +23,8 @@ small benefits on cold-starts.
 
 ## Usage example
 
+The main `index.js`:
+
 ```
 require('@noticeable/cloud-functions-loader')({
     'api/env.js': false,
@@ -39,5 +41,18 @@ require('@noticeable/cloud-functions-loader')({
     'firestore/projects/onDelete.js': true,
     'firestore/projects/onUpdate.js': true,
     'firestore/users/onDelete.js': true
+});
+```
+
+The definition for `api/env.js`:
+
+```
+const functions = require('firebase-functions');
+
+exports = module.exports = functions.https.onRequest((req, res) => {
+    res.send(200, {
+        'date': new Date(),
+        'env': process.env
+    });
 });
 ```
