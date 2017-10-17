@@ -1,0 +1,34 @@
+{
+  "name": "@noticeable/cloud-functions-loader",
+  "version": "1.0.0",
+  "description": "Exports Google Cloud Functions with scale in mind.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.11.1"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noticeableapp/cloud-functions-loader.git"
+  },
+  "keywords": [
+    "cloud-functions",
+    "cloud-functions-loader",
+    "firebase",
+    "firebase-functions",
+    "loader"
+  ],
+  "author": "Laurent Pellegrino <laurent.pellegrino@noticeable.io>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/noticeableapp/cloud-functions-loader/issues"
+  },
+  "homepage": "https://github.com/noticeableapp/cloud-functions-loader#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^3.5.0"
+  }
+}
