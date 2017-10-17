@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Exports Google Cloud Functions with scale in mind.",
   "main": "index.js",
-  "engines": {
-    "node": ">=6.11.1"
-  },
   "scripts": {
     "test": "mocha --reporter spec"
   },
@@ -21,7 +18,7 @@
     "loader"
   ],
   "author": "Laurent Pellegrino <laurent.pellegrino@noticeable.io>",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/noticeableapp/cloud-functions-loader/issues"
   },
