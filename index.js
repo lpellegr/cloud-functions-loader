@@ -17,20 +17,6 @@
 
 /**
  * Custom logic to load functions based on conventions.
- * <p>
- * The conventions are:
- * - Put each function code in a dedicated file (optionally in a directory hierarchy).
- * - Each function file must use the camel case for its name.
- * - Register the path to the function source code for loading by this module.
- * <p>
- * The purpose is to keep each function source code isolated in its own file to
- * ease maintenance. In most of the cases, this solution also provides performance
- * improvements since each function loads only the dependencies it needs.
- * Besides, not all functions are exported to Google Functions runtime, which has
- * small benefits on cold-starts.
- * <p>
- * The code was inspired by discussion started on Medium:
- * https://codeburst.io/organizing-your-firebase-cloud-functions-67dc17b3b0da
  *
  * @param functions A dictionary of functions to export. The key is the path to
  * the source code of the function to export and the value is a boolean that says
